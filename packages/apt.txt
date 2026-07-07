@@ -1,0 +1,36 @@
+# ===============================
+# Core
+# ===============================
+curl
+wget
+git
+zip
+unzip
+tree
+build-essential
+software-properties-common
+ca-certificates
+apt-transport-https
+
+# ===============================
+# Better CLI
+# ===============================
+bat
+btop
+eza
+fastfetch
+fd-find
+fzf
+htop
+jq
+yq
+ncdu
+duf
+ripgrep
+tmux
+zoxide
+
+# ===============================
+# Shell
+# ===============================
+bash-completion

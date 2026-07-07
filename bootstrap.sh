@@ -1,13 +1,22 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-echo "🚀 Iniciando configuración de mi entorno Linux..."
+set -e
 
-# Colores para output
-GREEN='\033[0;32m'
-NC='\033[0m'
+echo ""
+echo "======================================="
+echo " Linux Development Environment"
+echo " Bootstrap"
+echo "======================================="
+echo ""
 
-echo -e "${GREEN}📦 Instalando paquetes básicos...${NC}"
-sudo apt update
-sudo apt install -y git curl wget vim htop tree
+chmod +x install/*.sh
 
-echo -e "${GREEN}✅ Bootstrap completado!${NC}"
+./install/apt.sh
+./install/fonts.sh
+./install/shell.sh
+
+echo ""
+echo "======================================="
+echo "Bootstrap completed successfully!"
+echo "Restart your terminal."
+echo "======================================="
